@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="treeTransport.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_height.png"/>
+    <File fileId="2" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_normal.png"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lodgepolePineTrunk_mat" materialId="5" customShaderId="3" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mParallaxMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="treeTransport.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="transportTreeGroup" translation="0 0.298824 -0.00841554" nodeId="8">
+      <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="1.52" clipDistance="250" nodeId="9" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

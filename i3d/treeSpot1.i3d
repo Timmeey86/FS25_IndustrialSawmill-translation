@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="treeSpot1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="treeTransport.i3d"/>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="spot1" rotation="-45 45 0" nodeId="6">
+      <TransformGroup name="tree1" translation="-0.0750732 0.32 0.319946" rotation="-90 -90 0" nodeId="7">
+        <ReferenceNode name="transportTreeGroup" referenceId="1" nodeId="20"/>
+      </TransformGroup>
+      <TransformGroup name="tree2" translation="0.0750122 0.320007 0.960083" rotation="-90 -90 0" nodeId="8"/>
+      <TransformGroup name="tree3" translation="0.0750122 0.320007 1.59998" rotation="-90 -90 0" nodeId="9"/>
+      <TransformGroup name="tree4" translation="0 0.32 2.24005" rotation="-90 -90 0" nodeId="10"/>
+      <TransformGroup name="tree5" translation="0.0749512 0.320015 2.88007" rotation="-90 -90 0" nodeId="11"/>
+      <TransformGroup name="tree6" translation="-0.0750732 0.87999 0.639954" rotation="-90 -90 0" nodeId="12"/>
+      <TransformGroup name="tree7" translation="-0.0750122 0.87999 1.28003" rotation="-90 -90 0" nodeId="13"/>
+      <TransformGroup name="tree8" translation="-0.0750122 0.879997 1.92004" rotation="-90 -90 0" nodeId="14"/>
+      <TransformGroup name="tree9" translation="-0.0750732 0.879997 2.56" rotation="-90 -90 0" nodeId="15"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="6">
+      <Attribute name="numRows" type="integer" value="2"/>
+      <Attribute name="numTreesPerRow" type="integer" value="5"/>
+      <Attribute name="sizeX" type="float" value="5.5"/>
+      <Attribute name="sizeY" type="float" value="1.4"/>
+      <Attribute name="sizeZ" type="float" value="3.5"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

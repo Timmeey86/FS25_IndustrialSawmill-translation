@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="92">
+    <author>GMNGjoy</author>
+    <version>1.0.0.0-delta</version>
+    <title>
+        <en>Industrial Sawmill</en>
+        <de>Industrielles Sägewerk</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[Tired of driving across the entire map to sell your wood, or want a small and efficient sawmill directly on your farm? This mod is for you.
+
+A homestead-sized sawmill for your farm with two versions to either serve as a direct-sellpoint or a sawmill production. Depending on the style of your farm the sawmill is also available in a "rusty but trusty" look.
+
+INDUSTRIAL SAWMILL (Production)
+Category: Productions
+Price: $10,000
+Monthly upkeep: $9
+Production Recipes:
+- Planks (240 cycles / Month, $24 / Month) : 100 Wood = 90 Planks + 10 Wood Chips
+- Long Planks (240 cycles / Month, $48 / Month) : 100 Wood = 93 Long Planks + 7 Wood Chips
+- Wood Beams (240 cycles / Month, $48 / Month) : 100 Wood = 94 Wood Beam + 6 Wood Chips
+- Wood Delivery (240 cycles / Month, $12 / Month) : 100 Wood = 100 Wood
+Configurations: Visual (Default | Rusty but trusty)
+
+INDUSTRIAL SAWMILL SELL
+Category: Sellpoints
+Price: $2,000
+Monthly upkeep: $3
+Products Accepted: Wood, Planks, Long Planks, Wood Beams, Prefab Walls, Wood Chips
+Configurations:  Visual (Default | Rusty but trusty)
+
+INDUSTRIAL SAWMILL BUY
+Category: Containers
+Price: $4,000
+Monthly upkeep: $3
+Products Sold: Planks, Long Planks, Wood Beams, Prefab Walls, Wood Chips
+Configurations:  Visual (Default | Rusty but trusty)
+
+INDUSTRIAL SAWMILL BUY & SELL
+Category: Sellpoints
+Price: $6,000
+Monthly upkeep: $6
+Products Accepted: Wood, Planks, Long Planks, Wood Beams, Prefab Walls, Wood Chips
+Products Sold: Planks, Long Planks, Wood Beams, Prefab Walls, Wood Chips
+Configurations: Visual (Default | Rusty but trusty)
+
+Placement Note:
+If you wish to place a shed over the sawmill - place the shed first, then using free-placement mode, place the sawmill under the shed.
+
+For license & feedback, please visit
+GitHub link: https://github.com/GMNGjoy/FS25_IndustrialSawmill]]>
+        </en>
+        <de>
+<![CDATA[Bist du es leid, über die gesamte Karte zu fahren, um dein Holz zu verkaufen, oder willst du ein kleines und effizientes Sägewerk direkt auf deinem Hof? Dann ist diese Mod genau das Richtige für dich.
+
+Ein Sägewerk in der Größe eines Gehöfts für deine Farm mit zwei Versionen, die entweder als Direktverkaufspunkt oder als Sägewerksproduktion dienen. Je nach dem Stil deiner Farm ist das Sägewerk auch in einem „rostigen aber treuen“ Look erhältlich.
+
+Platzierbare Objekte:
+- Industrielles Sägewerk (Verkaufspunkt) : Verkaufspunkt für Holz, Hackschnitzel und Holzprodukte. Erhalte einen leichten Bonus für den Direktverkauf auf deinem Hof.
+- Industrielles Sägewerk (Produktion) : Produziert Bretter und ermöglicht den direkten Verkauf oder die Lieferung Ihres Holzes. Produzieren Sie auch lange Bretter und Holzbalken, wenn die Platin-Edition aktiviert ist!
+
+Stile:
+- Industrielles Sägewerk: Der Standard-Look für das Sägewerk mit einem allgemeinen „gebrauchten“ Look. Dies ist kein Ausstellungssägewerk, sondern ein funktionierendes Sägewerk!
+- Verrostetes Industriesägewerk: Die werden nicht mehr so hergestellt wie früher! Dieses Sägewerk hat den Test der Zeit überstanden, ist aber durchgerostet, nachdem die Farbe abgeblättert ist. Funktioniert aber noch!
+
+Rezepte:
+- Bretter (240 Zyklen / Monat, 24€ / Monat) : 100 Holz = 90 Bretter + 10 Hackschnitzel
+- Lange Bretter (240 Zyklen / Monat, 48€ / Monat) : 100 Holz = 93 Lange Bretter + 7 Hackschnitzel
+- Holzbalken (240 Zyklen / Monat, 48€ / Monat) : 100 Holz = 94 Holzbalken + 6 Hackschnitzel
+- Holz-Verteilung (240 Zyklen / Monat, 12€ / Monat) : 100 Holz = 100 Holz
+
+Hinweis zur Platzierung: Wenn du einen Schuppen über dem Sägewerk platzieren möchtest, platziere zuerst den Schuppen und dann das Sägewerk im Freiplatzierungsmodus unter dem Schuppen.
+
+Besucht für Lizenz & Feedback bitte
+GitHub-Link: https://github.com/GMNGjoy/FS22_IndustrialSawmill]]>
+        </de>
+    </description>
+    <iconFilename>icon_industrialSawmill.dds</iconFilename>
+    <multiplayer supported="true" />
+
+	<storeItems>
+        <storeItem xmlFilename="xml/sawmillProduction.xml" />
+        <storeItem xmlFilename="xml/sawmillSellpoint.xml" />
+        <storeItem xmlFilename="xml/sawmillBuypoint.xml" />
+        <storeItem xmlFilename="xml/sawmillWarehouse.xml" />
+        <storeItem xmlFilename="xml/woodStack1.xml" />
+        <storeItem xmlFilename="xml/woodStack2.xml" />
+    </storeItems>
+
+    <l10n filenamePrefix="languages/l10n">
+        <text name="shopItem_woodStack1">
+            <en>Small Wood Pile</en>
+            <de></de>
+        </text>
+        <text name="shopItem_woodStack2">
+            <en>Large Wood Pile</en>
+            <de></de>
+        </text>
+    </l10n>
+</modDesc>

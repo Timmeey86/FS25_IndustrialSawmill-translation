@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sawmillBuypoint.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="textures/industrialSawmill_diffuse.png"/>
+    <File fileId="2" filename="textures/industrialSawmill_normal.png"/>
+    <File fileId="11" filename="textures/industrialSawmill_rusted_diffuse.png"/>
+    <File fileId="3" filename="textures/industrialSawmill_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="12" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="14" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="industrialSawmill_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="industrialSawmillRusted_mat" materialId="6" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="8">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sawmillBuypoint.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="sawmillSellpoint" nodeId="17">
+      <TransformGroup name="visuals" nodeId="18">
+        <TransformGroup name="sawmillLinkNode" nodeId="19"/>
+        <Shape name="industrialSawmill" translation="0 0.000192599 0" rotation="-2.50448e-06 -0 0" shapeId="1" clipDistance="250" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="col" translation="-0.00739281 1.02211 2.27899" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21" castsShadows="false" receiveShadows="false" distanceBlending="false" renderedInViewports="false" materialIds="7"/>
+        </Shape>
+        <Shape name="industrialSawmillRusted" translation="0 0.000192599 0" rotation="-2.50448e-06 -0 0" shapeId="1" visibility="false" clipDistance="250" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="col" translation="-0.00739281 1.02211 2.27899" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="23" castsShadows="false" receiveShadows="false" distanceBlending="false" renderedInViewports="false" materialIds="7"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="clearAreas" nodeId="24">
+        <TransformGroup name="clearArea1Start" translation="-5 0 -5" nodeId="25">
+          <TransformGroup name="clearArea1Width" translation="0 0 10" nodeId="26"/>
+          <TransformGroup name="clearArea1Height" translation="6 0 0" nodeId="27"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="28">
+        <TransformGroup name="levelArea1Start" translation="-5 0 -5" nodeId="29">
+          <TransformGroup name="levelArea1Width" translation="0 0 10" nodeId="30"/>
+          <TransformGroup name="levelArea1Height" translation="6 0 0" nodeId="31"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="32"/>
+      <TransformGroup name="testAreas" nodeId="33">
+        <TransformGroup name="testArea1Start" translation="-5 0 -5" nodeId="34">
+          <TransformGroup name="testArea1End" translation="5.5 2 10" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="36">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5 0 -5" nodeId="37">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="6 -9.09495e-15 10" nodeId="38"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" translation="0 -1.44772 -4.40624" nodeId="39"/>
+      <TransformGroup name="collisions" nodeId="40"/>
+      <TransformGroup name="sellingStation" translation="5.05474 0 0" nodeId="41"/>
+      <TransformGroup name="buyingStation" nodeId="42">
+        <TransformGroup name="buyPlayerTriggerMarker" translation="0 0.2 3.4" nodeId="43"/>
+        <Shape name="buyPlayerTrigger" translation="0 0.2 3.4" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" clipDistance="600" objectMask="0x100000" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <TransformGroup name="warningStripeGroup-wood" translation="-3.03482 0 0" nodeId="45">
+          <Shape name="warningStripe" translation="2 0 5" shapeId="4" nodeId="46" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="-2 0 5" shapeId="5" nodeId="47" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="2 0 -5" shapeId="6" nodeId="48" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="-2 0 -5" shapeId="7" nodeId="49" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="palletSpawners" translation="-2.45221 0 0" nodeId="50">
+          <TransformGroup name="spawnSpace1start" translation="1.1 0 5" rotation="-0 90 0" nodeId="51">
+            <TransformGroup name="spawnSpace1end" translation="10 0 0" nodeId="52"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace2start" translation="1.1 0.75 5" rotation="-0 90 0" nodeId="53">
+            <TransformGroup name="spawnSpace2end" translation="10 0 2.27374e-15" nodeId="54"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace3start" translation="1.1 1.5 5" rotation="-0 90 0" nodeId="55">
+            <TransformGroup name="spawnSpace3end" translation="10 0 2.27374e-15" nodeId="56"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace4start" translation="0 0 5" rotation="-0 90 0" nodeId="57">
+            <TransformGroup name="spawnSpace4end" translation="10 0 2.27374e-15" nodeId="58"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace5start" translation="0 0.75 5" rotation="-0 90 0" nodeId="59">
+            <TransformGroup name="spawnSpace5end" translation="10 0 2.27374e-15" nodeId="60"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace6start" translation="0 1.5 5" rotation="-0 90 0" nodeId="61">
+            <TransformGroup name="spawnSpace6end" translation="10 0 2.27374e-15" nodeId="62"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace7start" translation="-1.1 0 5" rotation="-0 90 0" nodeId="63">
+            <TransformGroup name="spawnSpace7end" translation="10 0 2.27374e-15" nodeId="64"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace8start" translation="-1.1 0.75 5" rotation="-0 90 0" nodeId="65">
+            <TransformGroup name="spawnSpace8end" translation="10 0 2.27374e-15" nodeId="66"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace9start" translation="-1.1 1.5 5" rotation="-0 90 0" nodeId="67">
+            <TransformGroup name="spawnSpace9end" translation="10 0 2.27374e-15" nodeId="68"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace10start" translation="-2.2 0 5" rotation="-0 90 0" nodeId="69">
+            <TransformGroup name="spawnSpace10end" translation="10 0 2.27374e-15" nodeId="70"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace11start" translation="-2.2 0.75 5" rotation="-0 90 0" nodeId="71">
+            <TransformGroup name="spawnSpace11end" translation="10 0 2.27374e-15" nodeId="72"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace12start" translation="-2.2 1.5 5" rotation="-0 90 0" nodeId="73">
+            <TransformGroup name="spawnSpace12end" translation="10 0 2.27374e-15" nodeId="74"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

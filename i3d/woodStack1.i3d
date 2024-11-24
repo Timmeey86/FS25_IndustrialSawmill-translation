@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woodStack1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_height.png"/>
+    <File fileId="2" filename="$data/maps/trees/lodgepolePine/lodgepolePineTrunk_normal.png"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lodgepolePineTrunk_mat" materialId="5" customShaderId="3" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mParallaxMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="woodStack1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="woodStack1" nodeId="8">
+      <TransformGroup name="tree1" translation="-2.5525 0.32 -1.28007" rotation="-90 -90 0" nodeId="9">
+        <TransformGroup name="transportTreeGroup" nodeId="10">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="11" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree2" translation="-2.40241 0.320007 -0.639934" rotation="-90 -90 0" nodeId="12">
+        <TransformGroup name="transportTreeGroup" nodeId="13">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="14" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree3" translation="-2.40241 0.320007 -3.69549e-05" rotation="-90 -90 0" nodeId="15">
+        <TransformGroup name="transportTreeGroup" nodeId="16">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="17" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree4" translation="-2.47742 0.32 0.640033" rotation="-90 -90 0" nodeId="18">
+        <TransformGroup name="transportTreeGroup" nodeId="19">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="20" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree5" translation="-2.40247 0.320015 1.28005" rotation="-90 -90 0" nodeId="21">
+        <TransformGroup name="transportTreeGroup" nodeId="22">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="23" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree6" translation="-2.5525 0.87999 -0.960063" rotation="-90 -90 0" nodeId="24">
+        <TransformGroup name="transportTreeGroup" nodeId="25">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="26" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree7" translation="-2.55244 0.87999 -0.319987" rotation="-90 -90 0" nodeId="27">
+        <TransformGroup name="transportTreeGroup" nodeId="28">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="29" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree8" translation="-2.55244 0.879997 0.320023" rotation="-90 -90 0" nodeId="30">
+        <TransformGroup name="transportTreeGroup" nodeId="31">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="32" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tree9" translation="-2.5525 0.879997 0.959983" rotation="-90 -90 0" nodeId="33">
+        <TransformGroup name="transportTreeGroup" nodeId="34">
+          <Shape name="transportTreeLOD0" translation="-0.001207 0 -0.000126" shapeId="1" dynamic="true" collisionFilterGroup="0x830" collisionFilterMask="0xfe3ffb83" angularDamping="0.1" rollingFriction="0.17" density="0.52" clipDistance="250" nodeId="35" castsShadows="true" receiveShadows="true" splitType="24" splitUvs="0.007 0.001 0.97 0.0619 1" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

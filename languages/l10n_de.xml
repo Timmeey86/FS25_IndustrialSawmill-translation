@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>
+        <translationContributor>Farmsim Tim</translationContributor>
+    </translationContributors>
+    <texts>
+        <text name="shopItem_industrialSawmill" text="Industrielles Sägewerk" />
+        <text name="shopItem_industrialSawmillSell" text="Industrielles Sägewerk" />
+        <text name="shopItem_industrialSawmillBuy" text="Industrielles Sägewerk" />
+        <text name="shopItem_industrialSawmillBuySell" text="Industrielles Sägewerk" />
+           
+        <text name="function_woodProductSell" text="Direct sell wood, palletized wood products and bulk wood chips" />
+        <text name="function_woodProductBuy" text="Don't want to do forestry? Buy palletized wood products here!" />
+        
+        <text name="configuration_patina" text="Patina" />
+        <text name="configuration_rusted" text="Rusted Patina" />
+    </texts>
+</l10n>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_woodStack2</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/store/store_empty.png</image>
+        <price>1002</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>0</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>misc</category>
+        <brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+        <canBeSold>false</canBeSold>
+        <showInStore>true</showInStore>
+    </storeData>
+
+    <base>
+        <filename>i3d/woodStack2.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas />
+
+        <sounds>
+            <place template="smallImp" pitchScale="1.0"/>
+        </sounds>
+    </placement>
+
+    <clearAreas />
+
+    <leveling requireLeveling="false">
+        <levelAreas />
+    </leveling>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas />
+     <ai>
+        <updateAreas />
+    </ai>
+</placeable>

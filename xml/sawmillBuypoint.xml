@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="warehouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_industrialSawmillBuySell</name>
+        <functions>
+            <function>$l10n_function_woodProductBuy</function>
+        </functions>
+        <image>icons/store_industrialSawmill.png</image>
+        <price>4000</price>
+        <lifetime>100</lifetime>
+        <dailyUpkeep>0.1</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <rotation>110</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <storeIconRendering>
+            <settings cameraXRot="-11" cameraYRot="75" advancedBoundingBox="true"/>
+        </storeIconRendering>
+    </storeData>
+
+    <base>
+        <filename>i3d/sawmillBuypoint.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="teleportNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <palletBuyingStation triggerNode="buyPlayerTrigger">
+        <fillType name="BOARDS"      priceScale="0.7" />
+        <fillType name="PLANKS"      priceScale="0.7" />
+        <fillType name="WOODBEAM"    priceScale="0.7" />
+        <fillType name="WOODCHIPS"   priceScale="0.7" />
+        <fillType name="PREFABWALL"  priceScale="0.7" />
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletSpawn1Start" endNode="palletSpawn1End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn2Start" endNode="palletSpawn2End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn3Start" endNode="palletSpawn3End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn4Start" endNode="palletSpawn4End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn5Start" endNode="palletSpawn5End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn6Start" endNode="palletSpawn6End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn7Start" endNode="palletSpawn7End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn8Start" endNode="palletSpawn8End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn9Start" endNode="palletSpawn9End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn10Start" endNode="palletSpawn10End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn11Start" endNode="palletSpawn11End" palletRotationOffset="0"/>
+                <spawnPlace startNode="palletSpawn12Start" endNode="palletSpawn12End" palletRotationOffset="0"/>
+            </spawnPlaces>
+        </palletSpawner>
+    </palletBuyingStation>
+
+    <triggerMarkers>
+        <triggerMarker node="buyPlayerTriggerMarker" filename="$data/shared/assets/marker/markerIconShopping.i3d" adjustToGround="true" />
+
+        <triggerMarker node="warningStripe-buying-1" adjustToGround="true" />
+        <triggerMarker node="warningStripe-buying-2" adjustToGround="true" />
+        <triggerMarker node="warningStripe-buying-3" adjustToGround="true" />
+        <triggerMarker node="warningStripe-buying-4" adjustToGround="true" />
+    </triggerMarkers>
+
+    <!-- leverage the solar panels customization to provide a rusted patina customization -->
+    <solarPanels>
+        <solarPanelsConfigurations title="$l10n_configuration_visual">
+            <solarPanelsConfiguration name="$l10n_configuration_valueDefault" isActive="true">
+                <objectChange node="sawmillNew" visibilityActive="true"/>
+                <objectChange node="sawmillRusty" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="$l10n_configuration_rusted" isActive="false">
+                <objectChange node="sawmillRusty" visibilityActive="true"/>
+                <objectChange node="sawmillNew" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <i3dMappings>
+        <i3dMapping id="sawmillSellpoint" node="0>" />
+        <i3dMapping id="sawmillNew" node="0>0|1" />
+        <i3dMapping id="sawmillRusty" node="0>0|2" />
+
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+
+        <i3dMapping id="teleportNode" node="0>6" />
+
+        <i3dMapping id="buyPlayerTriggerMarker" node="0>9|0" />
+        <i3dMapping id="buyPlayerTrigger" node="0>9|1" />
+
+        <i3dMapping id="warningStripe-buying-1" node="0>9|2|0" />
+        <i3dMapping id="warningStripe-buying-2" node="0>9|2|1" />
+        <i3dMapping id="warningStripe-buying-3" node="0>9|2|2" />
+        <i3dMapping id="warningStripe-buying-4" node="0>9|2|3" />
+
+        <i3dMapping id="palletSpawner" node="0>9|3" />
+        <i3dMapping id="palletSpawn1Start" node="0>9|3|0" />
+        <i3dMapping id="palletSpawn1End" node="0>9|3|0|0" />
+        <i3dMapping id="palletSpawn2Start" node="0>9|3|1" />
+        <i3dMapping id="palletSpawn2End" node="0>9|3|1|0" />
+        <i3dMapping id="palletSpawn3Start" node="0>9|3|2" />
+        <i3dMapping id="palletSpawn3End" node="0>9|3|2|0" />
+        <i3dMapping id="palletSpawn4Start" node="0>9|3|3" />
+        <i3dMapping id="palletSpawn4End" node="0>9|3|3|0" />
+        <i3dMapping id="palletSpawn5Start" node="0>9|3|4" />
+        <i3dMapping id="palletSpawn5End" node="0>9|3|4|0" />
+        <i3dMapping id="palletSpawn6Start" node="0>9|3|5" />
+        <i3dMapping id="palletSpawn6End" node="0>9|3|5|0" />
+        <i3dMapping id="palletSpawn7Start" node="0>9|3|6" />
+        <i3dMapping id="palletSpawn7End" node="0>9|3|6|0" />
+        <i3dMapping id="palletSpawn8Start" node="0>9|3|7" />
+        <i3dMapping id="palletSpawn8End" node="0>9|3|7|0" />
+        <i3dMapping id="palletSpawn9Start" node="0>9|3|8" />
+        <i3dMapping id="palletSpawn9End" node="0>9|3|8|0" />
+        <i3dMapping id="palletSpawn10Start" node="0>9|3|9" />
+        <i3dMapping id="palletSpawn10End" node="0>9|3|9|0" />
+        <i3dMapping id="palletSpawn11Start" node="0>9|3|10" />
+        <i3dMapping id="palletSpawn11End" node="0>9|3|10|0" />
+        <i3dMapping id="palletSpawn12Start" node="0>9|3|11" />
+        <i3dMapping id="palletSpawn12End" node="0>9|3|11|0" />
+    </i3dMappings>
+</placeable>
