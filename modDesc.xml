@@ -21,7 +21,7 @@ Production Recipes:
 - Long Planks (240 cycles / Month, $48 / Month) : 100 Wood = 93 Long Planks + 7 Wood Chips
 - Wood Beams (240 cycles / Month, $48 / Month) : 100 Wood = 94 Wood Beam + 6 Wood Chips
 - Wood Delivery (240 cycles / Month, $12 / Month) : 100 Wood = 100 Wood
-Configurations: Visual (Default | Rusty but trusty)
+Configurations: Visual (Default | Rusty but trusty) 
 
 INDUSTRIAL SAWMILL SELL
 Category: Sellpoints
@@ -84,8 +84,6 @@ GitHub-Link: https://github.com/GMNGjoy/FS25_IndustrialSawmill]]>
         <storeItem xmlFilename="xml/sawmillSellpoint.xml" />
         <storeItem xmlFilename="xml/sawmillBuypoint.xml" />
         <storeItem xmlFilename="xml/sawmillWarehouse.xml" />
-        <!-- <storeItem xmlFilename="_dev/woodStack1.xml" />
-        <storeItem xmlFilename="_dev/woodStack2.xml" /> -->
     </storeItems>
 
     <l10n filenamePrefix="languages/l10n" />

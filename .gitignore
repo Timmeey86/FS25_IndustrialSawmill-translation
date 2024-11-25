@@ -1,5 +1,5 @@
 *.zip
-_dev
+# _dev
 _assets
 _artwork
 _versions
