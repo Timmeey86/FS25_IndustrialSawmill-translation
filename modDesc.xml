@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="92">
     <author>GMNGjoy</author>
-    <version>1.0.0.0-delta</version>
+    <version>1.0.0.1</version>
     <title>
         <en>Industrial Sawmill</en>
         <de>Industrielles Sägewerk</de>
@@ -73,7 +73,7 @@ Rezepte:
 Hinweis zur Platzierung: Wenn du einen Schuppen über dem Sägewerk platzieren möchtest, platziere zuerst den Schuppen und dann das Sägewerk im Freiplatzierungsmodus unter dem Schuppen.
 
 Besucht für Lizenz & Feedback bitte
-GitHub-Link: https://github.com/GMNGjoy/FS22_IndustrialSawmill]]>
+GitHub-Link: https://github.com/GMNGjoy/FS25_IndustrialSawmill]]>
         </de>
     </description>
     <iconFilename>icon_industrialSawmill.dds</iconFilename>
@@ -84,18 +84,10 @@ GitHub-Link: https://github.com/GMNGjoy/FS22_IndustrialSawmill]]>
         <storeItem xmlFilename="xml/sawmillSellpoint.xml" />
         <storeItem xmlFilename="xml/sawmillBuypoint.xml" />
         <storeItem xmlFilename="xml/sawmillWarehouse.xml" />
-        <storeItem xmlFilename="xml/woodStack1.xml" />
-        <storeItem xmlFilename="xml/woodStack2.xml" />
+        <!-- <storeItem xmlFilename="_dev/woodStack1.xml" />
+        <storeItem xmlFilename="_dev/woodStack2.xml" /> -->
     </storeItems>
 
-    <l10n filenamePrefix="languages/l10n">
-        <text name="shopItem_woodStack1">
-            <en>Small Wood Pile</en>
-            <de></de>
-        </text>
-        <text name="shopItem_woodStack2">
-            <en>Large Wood Pile</en>
-            <de></de>
-        </text>
-    </l10n>
+    <l10n filenamePrefix="languages/l10n" />
+
 </modDesc>
