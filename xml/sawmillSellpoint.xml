@@ -61,10 +61,6 @@
         </updateAreas>
     </ai>
 
-    <!-- <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart filename="i3d/industrialSawmill.i3d" node="0" linkNode="sawmillLinkNode" />
-    </dynamicallyLoadedParts> -->
-
     <hotspots>
         <hotspot type="UNLOADING" linkNode="teleportNode" teleportNode="teleportNode" />
     </hotspots>
@@ -73,23 +69,21 @@
         <unloadTrigger fillTypes="WOODCHIPS" priceScale="1.5" exactFillRootNode="unloadBulkTrigger" aiNode="unloadWoodTriggerAINode" />
         <baleTrigger fillTypes="WOODCHIPS" priceScale="1.5" deleteLitersPerSecond="10000" triggerNode="unloadBaleTrigger" />
         <woodTrigger fillTypes="WOOD" priceScale="1.5" triggerNode="unloadWoodTrigger" activationTriggerNode="unloadWoodPlayerTrigger" />
-        <palletTrigger fillTypes="BOARDS PLANKS WOODBEAM WOODCHIPS PREFABWALL" priceScale="1.5" triggerNode="unloadPalletTrigger" />
+        <palletTrigger fillTypes="BOARDS PLANKS WOODBEAM WOODCHIPS PREFABWALL" priceScale="1.25" triggerNode="unloadPalletTrigger" />
 
-        <!-- <fillType name="WOOD"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOOD"      priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOODCHIPS" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOODBEAM"  priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="BOARDS"    priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="PLANKS"    priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="false" /> -->
+        <fillType name="PLANKS"    priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PREFABWALL"    priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
     <triggerMarkers>
         <triggerMarker node="unloadWoodPlayerTriggerMarker" filename="$data/shared/assets/marker/markerIconExclamationMark.i3d" adjustToGround="true" />
         <triggerMarker node="unloadWoodTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
 
-        <triggerMarker node="warningStripe-loading-1" adjustToGround="true" />
-        <triggerMarker node="warningStripe-loading-2" adjustToGround="true" />
-        <triggerMarker node="warningStripe-loading-3" adjustToGround="true" />
-        <triggerMarker node="warningStripe-loading-4" adjustToGround="true" />
+        <triggerMarker node="warningStripe-loading" />
     </triggerMarkers>
 
     <!-- leverage the solar panels customization to provide a rusted patina customization -->
@@ -108,8 +102,8 @@
 
     <i3dMappings>
         <i3dMapping id="sawmillSellpoint" node="0>" />
-        <i3dMapping id="sawmillNew" node="0>0|1" />
-        <i3dMapping id="sawmillRusty" node="0>0|2" />
+        <i3dMapping id="sawmillNew" node="0>0|0" />
+        <i3dMapping id="sawmillRusty" node="0>0|1" />
 
         <i3dMapping id="clearArea1Start" node="0>1|0" />
         <i3dMapping id="clearArea1Width" node="0>1|0|0" />
@@ -133,7 +127,7 @@
         <i3dMapping id="unloadPalletTrigger" node="0>8|7" />
         <i3dMapping id="unloadBaleTrigger" node="0>8|8" />
         
-
+        <i3dMapping id="warningStripe-loading" node="0>8|5" />
         <i3dMapping id="warningStripe-loading-1" node="0>8|5|0" />
         <i3dMapping id="warningStripe-loading-2" node="0>8|5|1" />
         <i3dMapping id="warningStripe-loading-3" node="0>8|5|2" />

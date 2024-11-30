@@ -2,7 +2,7 @@
 
 <i3D name="sawmillBuypoint.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.1"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
   </Asset>
 
   <Files>
@@ -44,7 +44,6 @@
   <Scene>
     <TransformGroup name="sawmillSellpoint" nodeId="17">
       <TransformGroup name="visuals" nodeId="18">
-        <TransformGroup name="sawmillLinkNode" nodeId="19"/>
         <Shape name="industrialSawmill" translation="0 0.000192599 0" rotation="-2.50448e-06 -0 0" shapeId="1" clipDistance="250" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="5">
           <Shape name="col" translation="-0.00739281 1.02211 2.27899" shapeId="2" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="21" castsShadows="false" receiveShadows="false" distanceBlending="false" renderedInViewports="false" materialIds="7"/>
         </Shape>
@@ -82,10 +81,10 @@
         <TransformGroup name="buyPlayerTriggerMarker" translation="0 0.2 3.4" nodeId="43"/>
         <Shape name="buyPlayerTrigger" translation="0 0.2 3.4" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" clipDistance="600" objectMask="0x100000" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
         <TransformGroup name="warningStripeGroup-wood" translation="-3.03482 0 0" nodeId="45">
-          <Shape name="warningStripe" translation="2 0 5" shapeId="4" nodeId="46" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
-          <Shape name="warningStripe" translation="-2 0 5" shapeId="5" nodeId="47" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
-          <Shape name="warningStripe" translation="2 0 -5" shapeId="6" nodeId="48" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
-          <Shape name="warningStripe" translation="-2 0 -5" shapeId="7" nodeId="49" castsShadows="false" receiveShadows="true" occluder="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="2 0 5" shapeId="4" nodeId="46" castsShadows="false" receiveShadows="true" nonRenderable="true" distanceBlending="false" terrainDecal="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="-2 0 5" shapeId="5" nodeId="47" castsShadows="false" receiveShadows="true" nonRenderable="true" distanceBlending="false" terrainDecal="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="2 0 -5" shapeId="6" nodeId="48" castsShadows="false" receiveShadows="true" nonRenderable="true" distanceBlending="false" terrainDecal="true" materialIds="8"/>
+          <Shape name="warningStripe" translation="-2 0 -5" shapeId="7" nodeId="49" castsShadows="false" receiveShadows="true" nonRenderable="true" distanceBlending="false" terrainDecal="true" materialIds="8"/>
         </TransformGroup>
         <TransformGroup name="palletSpawners" translation="-2.45221 0 0" nodeId="50">
           <TransformGroup name="spawnSpace1start" translation="1.1 0 5" rotation="-0 90 0" nodeId="51">

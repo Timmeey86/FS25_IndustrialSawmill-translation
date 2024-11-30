@@ -12,7 +12,7 @@
         <text name="function_woodProductSell" text="Direct sell wood, palletized wood products and bulk wood chips" />
         <text name="function_woodProductBuy" text="Don't want to do forestry? Buy palletized wood products here!" />
         
-        <text name="configuration_patina" text="Patina" />
-        <text name="configuration_rusted" text="Rusted Patina" />
+        <text name="configuration_visual" text="Sawmill Visual" />
+        <text name="configuration_rusted" text="Rusty but trusty" />
     </texts>
 </l10n>
