@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>Ziuta</translationContributors>
+    <texts>
+        <text name="shopItem_industrialSawmill" text="Tartak przemysłowy (produkcja)" />
+        <text name="shopItem_industrialSawmillSell" text="Tartak przemysłowy (Punkt sprzedaży)" />
+        <text name="shopItem_industrialSawmillBuy" text="Tartak przemysłowy (Punkt zakupów)" />
+        <text name="shopItem_industrialSawmillBuySell" text="Tartak przemysłowy (Magazyn)" />
+           
+        <text name="function_woodProductSell" text="Sprzedaż bezpośrednia drewna, produktów drewnianych na paletach i zrębków!" />
+        <text name="function_woodProductBuy" text="Nie chcesz zajmować się leśnictwem? Kup paletowane produkty drewniane tutaj!" />
+        
+        <text name="configuration_visual" text="Wygląd tartaku" />
+        <text name="configuration_rusted" text="Zardzewiały, ale niezawodny" />
+
+        <text name="delivery" text="Dostawa" />
+    </texts>
+</l10n>
